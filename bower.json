@@ -4,10 +4,12 @@
   "authors": [
     "sheriffderek <derekthomaswood@gmail.com>"
   ],
-  "description": "\"basic\" is a carefully considered set of rules to all",
+  "description": "\"basic\" is a carefully considered set of style rules to make baby talking to computers, notably more fun.",
   "keywords": [
-    "stylus"
+    "css",
+    "stylus",
+    "basic"
   ],
   "license": "MIT",
-  "homepage": "sheriffderek.com/basic"
+  "homepage": "https://github.com/sheriffderek/basic"
 }
