@@ -1,0 +1,91 @@
+//////////////////////////////////////////
+
+// ERASE THIS WHOLE PAGE AND START FRESH
+
+//////////////////////////////////////////
+
+
+// global
+body
+	background white
+
+.inner-w
+	max-width 800px
+	padding $padding
+
+
+// sections
+.welcome
+	background $white
+	color $black
+	.site-title
+		font-size 34px
+	.current-page
+		color $color
+
+.menu
+	margin 0
+	padding $padding 0 $padding ($padding*1.7)
+
+
+// menu
+.compact-menu-switch
+	max-width 100%
+	position fixed
+	top 0
+	right 0
+	left 0
+	background transparent
+	color $color-light
+	text-align right
+	.switch
+		padding $padding
+		tap-area()
+		line-height $tap
+	span, .icon-x
+		balance()
+	.icon-x
+		medium-icon()
+		transform rotate(0deg)
+		transition all .3s ease-in
+	&:hover
+		cursor pointer
+
+
+.menu-overlay
+	position fixed
+	top 0
+	right 0
+	bottom 0
+	left 0
+	transform translate(-100%, 0)
+	transition all .1s ease-in
+	background rgba(0,0,0,0)
+	color rgba(255,255,255,0)
+	.menu
+		center-center()
+		a
+			display block
+			tap-area()
+
+
+.active-menu
+	//
+	.menu-overlay
+		transform translate(0, 0)
+		color rgba(255,255,255,.8)
+		transition all .2s ease-in
+		background rgba(0,0,0,.9)
+	.compact-menu-switch
+		//background $black
+		color rgba(255, 255, 255, .5)
+		.icon-x
+			transform rotate(180deg)
+
+
+
+
+
+
+
+

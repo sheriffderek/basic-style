@@ -1,0 +1,13 @@
+{
+  "name": "basic",
+  "version": "0.0.1",
+  "authors": [
+    "sheriffderek <derekthomaswood@gmail.com>"
+  ],
+  "description": "\"basic\" is a carefully considered set of rules to all",
+  "keywords": [
+    "stylus"
+  ],
+  "license": "MIT",
+  "homepage": "sheriffderek.com/basic"
+}

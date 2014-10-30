@@ -1,0 +1,36 @@
+
+// wireframes
+wire-frames(wire-frames-on = false)
+	if wire-frames-on
+		border 1px solid rgba(0,0,0,.05)
+		padding ($padding/2)
+		.container
+			margin-bottom $padding
+			border 1px solid rgba(0,0,0,.1)
+
+* // set wireframes
+	wire-frames()
+
+// to vertically align buddy elements
+balance()
+	float none
+	display inline-block
+	vertical-align middle
+
+// absolutly center
+center-center()
+	position absolute
+	margin auto
+	top 50%
+	left 50%
+	transform translate(-50%,-50%)
+
+// simple widths
+split-in($number-of-parts)
+	width (1 / $number-of-parts * 100%)
+
+// minimum area for tap interaction
+$tap = 44px
+tap-area()
+	min-width $tap
+	min-height $tap

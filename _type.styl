@@ -1,0 +1,115 @@
+
+// type reset
+h1, h2, h3, h4, h5, h6, li, p
+	margin 0
+	padding 0
+	font-weight 400
+
+// font stack
+$heading-font = arial
+$base-font = georgia
+
+// text selection reset
+::-moz-selection {
+    background transparent
+    color $color
+}
+::selection {
+    background transparent
+    color $color
+}
+
+// type patterns
+extra-small-type()
+	font-size 10px
+	line-height 1.4
+	color $gray
+	bp(m)
+		font-size 11px
+
+small-type()
+	font-size 13px
+	line-height 1.4
+	color $gray-dark
+	bp(m)
+		font-size 14px
+
+standard-type()
+	font-size 16px
+	line-height 1.4
+	color $black
+	bp(m)
+		font-size 17px
+
+medium-type()
+	font-size 19px
+	line-height 1.4
+	color $color
+	font-weight bold
+	bp(m)
+		font-size 20px
+
+large-type()
+	font-size 24px
+	line-height 1.4
+	color $contrast
+	bp(m)
+		font-size 26px
+
+extra-large-type()
+	font-size 34px
+	line-height 1.4
+	color $highlight
+	bp(m)
+		font-size 38px
+
+
+
+article
+	//
+	h1
+		extra-large-type()
+		color $black
+		margin-bottom $padding
+
+	h2
+		large-type()
+		color $color
+		margin-bottom $padding
+	p + h2
+		margin-top ($padding*3)
+
+	h3
+		medium-type()
+		color $highlight
+		margin-bottom $padding
+	p + h3
+		margin-top ($padding*3)
+
+	h4
+		medium-type()
+		margin-bottom $padding
+	p + h4
+		margin-top ($padding*3)
+
+	h5
+		standard-type()
+		font-weight bold
+		margin-bottom $padding
+		font-style italic
+
+	p + h5
+		margin-top ($padding*3)
+
+	p
+		standard-type()
+		margin-bottom $padding
+
+	ul, ol
+		padding $padding 0 $padding ($padding*1.7)
+		li
+			margin-bottom ($padding/2)
+
+
+
+

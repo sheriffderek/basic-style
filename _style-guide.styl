@@ -1,0 +1,154 @@
+
+// color-swatches
+.color-swatches
+	//
+	.block-list
+		//
+		.block
+			split-in(2)
+			min-height ($padding*10)
+			bp(m)
+				split-in(3)
+			bp(m-plus)
+				split-in(4)
+
+.black
+	background $black
+
+.white
+	background $white
+
+.gray
+	background $gray
+
+
+.gray-light
+	background $gray-light
+
+.gray
+	background $gray
+
+.gray-dark
+	background $gray-dark
+
+
+.color-light
+	background $color-light
+
+.color
+	background $color
+
+.color-dark
+	background $color-dark
+
+
+.highlight-light
+	background $highlight-light
+
+.highlight
+	background $highlight
+
+.highlight-dark
+	background $highlight-dark
+
+
+.alternate-light
+	background $alternate-light
+
+.alternate
+	background $alternate
+
+.alternate-dark
+	background $alternate-dark
+
+
+// type
+.heading-type
+	font-family $heading-font
+
+.base-type
+	font-family $base-font
+
+.extra-small-type
+	extra-small-type()
+
+.small-type
+	small-type()
+
+.standard-type
+	standard-type()
+
+.medium-type
+	medium-type()
+
+.large-type
+	large-type()
+
+.extra-large-type
+	extra-large-type()
+
+
+// icons
+.extra-small-icon
+	extra-small-icon()
+
+.small-icon
+	small-icon()
+
+.standard-icon
+	standard-icon()
+
+.medium-icon
+	medium-icon()
+
+.large-icon
+	large-icon()
+
+.extra-large-icon
+	extra-large-icon()
+
+
+// basic
+$colorz = rgba(0,0,0,.04)
+.basic-example.container
+	border 1px solid rgba(0,0,0,.2)
+	padding $padding
+	background $colorz
+
+	*
+		padding $padding
+
+	.inner-w
+		border 1px solid rgba(0,0,0,.2)
+		margin-bottom ($padding*2)
+		background $colorz
+
+	.block-list
+		border 1px solid rgba(0,0,0,.2)
+		background $colorz
+
+	.block
+		border 1px solid rgba(0,0,0,.2)
+		margin-bottom ($padding*3)
+		background $colorz
+
+	.image-w,
+		border 1px solid rgba(0,0,0,.2)
+		padding $padding 0 0 0
+		background $colorz
+
+	.text-w
+		border 1px solid rgba(0,0,0,.2)
+		background $colorz
+
+
+	span
+		display block
+		transform translate( ($padding/2), -83%)
+
+
+
+
+
+
+
