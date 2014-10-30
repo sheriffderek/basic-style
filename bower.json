@@ -8,8 +8,9 @@
   "keywords": [
     "css",
     "stylus",
-    "basic"
+    "basic",
+    "basic-style"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/sheriffderek/basic"
+  "homepage": "https://github.com/sheriffderek/basic-style"
 }
