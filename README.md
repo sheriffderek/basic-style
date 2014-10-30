@@ -13,6 +13,6 @@ a carefully considered set of style rules to make *baby-talking* to computers, n
 4. disregards the Microsoft Internet Explorer web browser
 
 
-<img src='http://derekthomaswood.com/social/insignia/512.png' alt='@sheriffderek' width='200px' height='200px' />
 
+<img src='http://derekthomaswood.com/social/insignia/512.png' alt='@sheriffderek' width='200px' height='200px' /><br />
 @sheriffderek
