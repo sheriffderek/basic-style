@@ -14,4 +14,5 @@ a carefully considered set of style rules to make *baby-talking* to computers, n
 
 
 <img src='http://derekthomaswood.com/social/insignia/512.png' alt='@sheriffderek' width='200px' height='200px' />
+
 @sheriffderek
