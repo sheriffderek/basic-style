@@ -1,10 +1,10 @@
 {
-  "name": "basic",
+  "name": "basic-style",
   "version": "0.0.1",
   "authors": [
     "sheriffderek <derekthomaswood@gmail.com>"
   ],
-  "description": "\"basic\" is a carefully considered set of style rules to make baby talking to computers, notably more fun.",
+  "description": "\"basic-style\" is a carefully considered set of style rules to make baby talking to computers, notably more fun.",
   "keywords": [
     "css",
     "stylus",
