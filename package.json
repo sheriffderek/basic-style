@@ -1,0 +1,17 @@
+{
+  "name": "basic-style",
+  "description": "",
+  "author": "@sheriffderek",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sheriffderek/basic-style"
+  },
+  "scripts": {
+    "start": "brunch watch --server",
+    "test": "brunch test"
+  },
+  "dependencies": {
+
+  }
+}
