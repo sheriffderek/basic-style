@@ -2,13 +2,7 @@
 exports.config = {
   files: {
     stylesheets: {
-      joinTo: 'stylesheets/app.css'
-    },
-    javascripts: {
-      joinTo: {
-        'javascripts/app.js': /^app/,
-        'javascripts/vendor.js': /^bower_components/
-      }
+      joinTo: 'css/basic.css'
     }
   },
   sourceMaps: false,

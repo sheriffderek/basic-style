@@ -13,7 +13,7 @@ wire-frames(wire-frames-on = false)
 
 // to vertically align buddy elements
 balance()
-	float none
+	float none // to be sure
 	display inline-block
 	vertical-align middle
 
@@ -29,8 +29,13 @@ center-center()
 split-in($number-of-parts)
 	width (1 / $number-of-parts * 100%)
 
-// minimum area for tap interaction
+// minimum area for "tap" interaction
 $tap = 44px
 tap-area()
 	min-width $tap
 	min-height $tap
+
+
+
+
+

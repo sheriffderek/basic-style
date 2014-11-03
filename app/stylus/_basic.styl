@@ -16,6 +16,7 @@ body
 	clear-fix()
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-webkit-tap-highlight-color: transparent;
+	// set these specifically within scope
 
 // major blocks
 .container
@@ -31,13 +32,14 @@ body
 	float left
 	clear-fix()
 
+
 block()
 	display block
 	width 100%
 	float left
 	clear-fix()
 
-// lists of blocks
+// lists of "blocks"
 .block-list
 	container()
 	list-style none

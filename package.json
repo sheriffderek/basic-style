@@ -5,13 +5,15 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sheriffderek/basic-style"
+    "url": ""
   },
   "scripts": {
     "start": "brunch watch --server",
     "test": "brunch test"
   },
   "dependencies": {
-
+    "autoprefixer-brunch": "^1.8.3",
+    "css-brunch": "^1.7.0",
+    "stylus-brunch": "^1.8.1"
   }
 }

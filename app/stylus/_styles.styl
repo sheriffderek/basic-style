@@ -4,8 +4,44 @@
 
 //////////////////////////////////////////
 
+// colors
+// =====================================
+
+// $black = #222222
+// $white = #ffffff
+
+// $gray 		= gray
+// $color 		= #C85B6D
+// $highlight 	= #81C1D5
+// $alternate 	= #D7A088
+
+// $gray-light 	= tint($gray, 50%)
+// $gray-dark 		= shade($gray, 50%)
+// $gray-lighter 	= tint($gray-light, 80%)
+
+// $color-light 	= tint($color, 50%)
+// $color-dark 	= shade($color, 50%)
+
+// $highlight-light 	= tint($highlight, 50%)
+// $highlight-dark 	= shade($highlight, 25%)
+
+// $alternate-light 	= tint($alternate, 50%)
+// $alternate-dark 	= shade($alternate, 25%)
+
+// =====================================
+
+
+// style
+// =====================================
+
+// $padding = 0.6rem
+// $corner = 5px
+
+// =====================================
+
 
 // global
+// =====================================
 body
 	background white
 
@@ -14,7 +50,8 @@ body
 	padding $padding
 
 
-// sections
+// section
+// =====================================
 .welcome
 	background $white
 	color $black
@@ -23,64 +60,6 @@ body
 	.current-page
 		color $color
 
-.menu
-	margin 0
-	padding $padding 0 $padding ($padding*1.7)
-
-
-// menu
-.compact-menu-switch
-	max-width 100%
-	position fixed
-	top 0
-	right 0
-	left 0
-	background transparent
-	color $color-light
-	text-align right
-	.switch
-		padding $padding
-		tap-area()
-		line-height $tap
-	span, .icon-x
-		balance()
-	.icon-x
-		medium-icon()
-		transform rotate(0deg)
-		transition all .3s ease-in
-	&:hover
-		cursor pointer
-
-
-.menu-overlay
-	position fixed
-	top 0
-	right 0
-	bottom 0
-	left 0
-	transform translate(-100%, 0)
-	transition all .1s ease-in
-	background rgba(0,0,0,0)
-	color rgba(255,255,255,0)
-	.menu
-		center-center()
-		a
-			display block
-			tap-area()
-
-
-.active-menu
-	//
-	.menu-overlay
-		transform translate(0, 0)
-		color rgba(255,255,255,.8)
-		transition all .2s ease-in
-		background rgba(0,0,0,.9)
-	.compact-menu-switch
-		//background $black
-		color rgba(255, 255, 255, .5)
-		.icon-x
-			transform rotate(180deg)
 
 
 
