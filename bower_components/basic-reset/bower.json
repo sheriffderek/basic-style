@@ -1,0 +1,20 @@
+{
+  "name": "basic-reset",
+  "version": "0.0.1",
+  "authors": [
+    "sheriffderek <derekthomaswood@gmail.com>"
+  ],
+  "description": "\"basic-reset\" is a carefully considered reset to make baby talking to computers, notably more fun.",
+  "keywords": [
+    "css",
+    "stylus",
+    "basic",
+    "basic-reset"
+  ],
+  "main": "public/basic-reset.css",
+  "ignore": [],
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT",
+  "homepage": "https://github.com/sheriffderek/basic-reset"
+}
