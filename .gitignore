@@ -1,7 +1,7 @@
 # Dependencies #
 ################
-bower_components
-node_packages
+/bower_components
+/node_packages
 
 
 # Packages #
