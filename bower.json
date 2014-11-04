@@ -12,7 +12,9 @@
     "basic-style"
   ],
   "main": "public/basic-style.css",
-  "ignore": [],
+  "ignore": [
+    "bower_components"
+  ],
   "dependencies": {
     "basic-reset": "*"
   },
