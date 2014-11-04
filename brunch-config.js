@@ -2,7 +2,7 @@
 exports.config = {
   files: {
     stylesheets: {
-      joinTo: 'css/basic.css'
+      joinTo: 'styles/basic.css'
     }
   },
   sourceMaps: false,

@@ -11,16 +11,12 @@
     "basic",
     "basic-style"
   ],
-  "main": "css/basic-style.css",
-  "ignore": [
-
-  ],
+  "main": "public/basic-style.css",
+  "ignore": [],
   "dependencies": {
-
+    "basic-reset": "*"
   },
-  "devDependencies": {
-
-  },
+  "devDependencies": {},
   "license": "MIT",
   "homepage": "https://github.com/sheriffderek/basic-style"
 }
