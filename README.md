@@ -16,5 +16,5 @@ a carefully considered set of style rules to make *baby-talking* to computers, n
 
 <br />
 
-<img src='http://derekthomaswood.com/social/insignia/512.png' alt='@sheriffderek' width='200px' height='200px' /><br />
+<img src='http://sheriffderek.consulting/resources/social/insignia/512.png' alt='.' width='200px' height='200px' /><br />
 @sheriffderek

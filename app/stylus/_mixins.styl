@@ -11,15 +11,28 @@ wire-frames(wire-frames-on = false)
 * // set wireframes
 	wire-frames()
 
-// to vertically align buddy elements
+// simplify position syntax
+static()
+	position static
+	
+relative()
+	position relative
+	
+absolute()
+	position absolute
+
+fixed()
+	position fixed
+
+// vertically align buddy elements
 balance()
-	float none // to be sure
+	float none // to be sure there is no float
 	display inline-block
 	vertical-align middle
 
 // absolutly center
 center-center()
-	position absolute
+	absolute()
 	margin auto
 	top 50%
 	left 50%
@@ -34,8 +47,4 @@ $tap = 44px
 tap-area()
 	min-width $tap
 	min-height $tap
-
-
-
-
 
