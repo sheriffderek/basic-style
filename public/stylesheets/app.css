@@ -376,16 +376,6 @@ p:after {
   border: 1px dotted #ff0;
   color: #ff0;
 }
-@media screen and (min-width: 700px) {
-  .container.basic-example .block {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .container.basic-example .block {
-    width: 33.3333333333333%;
-  }
-}
 .container.basic-example .image-w {
   position: relative;
   padding: 0.6rem;
