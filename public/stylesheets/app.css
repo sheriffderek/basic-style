@@ -112,17 +112,17 @@ p {
 }
 ::-moz-selection {
   background: transparent;
-  color: #598859;
+  color: #901111;
 }
 ::selection {
   background: transparent;
-  color: #598859;
+  color: #901111;
 }
 article h1 {
   font-family: $heading-font;
   font-size: 34px;
   line-height: 1.4;
-  color: #add8e6;
+  color: #00f;
   color: #222;
   margin-bottom: 0.6rem;
 }
@@ -134,8 +134,8 @@ article h1 {
 article h2 {
   font-size: 24px;
   line-height: 1.4;
-  color: #e6e6fa;
-  color: #90ee90;
+  color: #ff0;
+  color: #f00;
   margin-bottom: 0.6rem;
 }
 @media screen and (min-width: 700px) {
@@ -149,9 +149,9 @@ article p + h2 {
 article h3 {
   font-size: 19px;
   line-height: 1.4;
-  color: #90ee90;
+  color: #f00;
   font-weight: bold;
-  color: #add8e6;
+  color: #00f;
   margin-bottom: 0.6rem;
 }
 @media screen and (min-width: 700px) {
@@ -165,7 +165,7 @@ article p + h3 {
 article h4 {
   font-size: 19px;
   line-height: 1.4;
-  color: #90ee90;
+  color: #f00;
   font-weight: bold;
   margin-bottom: 0.6rem;
 }
@@ -227,7 +227,7 @@ article ol li {
 /* components */
 .button {
   display: inline-block;
-  background: #add8e6;
+  background: #00f;
   color: #efefef;
   border-radius: 5px;
   padding: 0 1.2rem;
@@ -238,10 +238,10 @@ article ol li {
   text-align: center;
 }
 .button.light {
-  background: #90ee90;
+  background: #f00;
 }
 .button.dark {
-  background: #add8e6;
+  background: #00f;
 }
 /* development helpers */
 h1:after,
@@ -345,32 +345,46 @@ p:after {
 }
 .container.basic-example span {
   border: 1px dotted #f00;
+  color: #f00;
 }
 .container.basic-example .inner-w {
   padding: 0.6rem;
   background: rgba(0,0,0,0.04);
   margin-bottom: 1.2rem;
-  border: 1px dotted #598859;
+  border: 1px dotted #00f;
 }
 .container.basic-example .inner-w span {
-  border: 1px dotted #598859;
+  border: 1px dotted #00f;
+  color: #00f;
 }
 .container.basic-example .block-list {
   padding: 0.6rem;
   background: rgba(0,0,0,0.04);
-  border: 1px dotted $hightlight-dark;
+  border: 1px dotted #222;
 }
 .container.basic-example .block-list span {
-  border: 1px dotted #8aaab5;
+  border: 1px dotted #222;
+  color: #222;
 }
 .container.basic-example .block {
   padding: 0.6rem;
   background: rgba(0,0,0,0.04);
   margin-bottom: 3rem;
-  border: 1px dotted #b5b5c4;
+  border: 1px dotted #ff0;
 }
 .container.basic-example .block span {
-  border: 1px dotted #b5b5c4;
+  border: 1px dotted #ff0;
+  color: #ff0;
+}
+@media screen and (min-width: 700px) {
+  .container.basic-example .block {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container.basic-example .block {
+    width: 33.3333333333333%;
+  }
 }
 .container.basic-example .image-w {
   position: relative;
@@ -378,7 +392,7 @@ p:after {
   background: rgba(0,0,0,0.04);
   padding: 0;
   margin-bottom: 1.2rem;
-  border: 1px dotted #598859;
+  border: 1px dotted #f00;
 }
 .container.basic-example .image-w span {
   position: absolute;
@@ -387,25 +401,25 @@ p:after {
   -webkit-transform: translate(0.6rem, -50%);
       -ms-transform: translate(0.6rem, -50%);
           transform: translate(0.6rem, -50%);
-  border: 1px dotted #598859;
+  border: 1px dotted #f00;
+  color: #f00;
 }
 .container.basic-example .text-w {
   padding: 0.6rem;
   background: rgba(0,0,0,0.04);
-  border: 1px dotted #8aaab5;
+  border: 1px dotted #f00;
 }
 .container.basic-example .text-w span {
-  border: 1px dotted #8aaab5;
+  border: 1px dotted #f00;
+  color: #f00;
 }
 .container.basic-example span {
   display: inline-block;
   -webkit-transform: translate(0.3rem, -83%);
       -ms-transform: translate(0.3rem, -83%);
           transform: translate(0.3rem, -83%);
-  color: #8aaab5;
   background: #e3e3e3;
   font-size: 12px;
-  border: 2px dotted $borderz;
   padding: 0.5rem;
 }
 .basic-swatches {
@@ -454,31 +468,31 @@ p:after {
   background: #e3e3e3;
 }
 .basic-swatches div.color-light {
-  background: #bfeebf;
+  background: #f77777;
 }
 .basic-swatches div.color {
-  background: #90ee90;
+  background: #f00;
 }
 .basic-swatches div.color-dark {
-  background: #598859;
+  background: #901111;
 }
 .basic-swatches div.highlight-light {
-  background: #cee3ea;
+  background: #7777f7;
 }
 .basic-swatches div.highlight {
-  background: #add8e6;
+  background: #00f;
 }
 .basic-swatches div.highlight-dark {
-  background: #8aaab5;
+  background: #0808c7;
 }
 .basic-swatches div.alternate-light {
-  background: #eaeaf4;
+  background: #f7f777;
 }
 .basic-swatches div.alternate {
-  background: #e6e6fa;
+  background: #ff0;
 }
 .basic-swatches div.alternate-dark {
-  background: #b5b5c4;
+  background: #c7c708;
 }
 /* this is just an example
 	i would just delete it. */
@@ -488,7 +502,7 @@ body {
   font-family: helvetica;
 }
 .inner-w {
-  max-width: 800px;
+  max-width: 1000px;
   padding: 0.6rem;
 }
 

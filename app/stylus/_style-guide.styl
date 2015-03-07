@@ -10,52 +10,61 @@ $stylez = dotted
 basic-example()
 	padding $pad
 	background $colorz
+
 .container.basic-example
 	basic-example()
-	border 1px $stylez red
+	border 1px $stylez $color
 	span //
-		border 1px $stylez red
+		border 1px $stylez $color
+		color $color
 	.inner-w
 		basic-example()
 		margin-bottom ($pad*2)
-		border 1px $stylez $color-dark
+		border 1px $stylez $highlight
 		span //
-			border 1px $stylez $color-dark
+			border 1px $stylez $highlight
+			color $highlight
 	.block-list
 		basic-example()
-		border 1px $stylez $hightlight-dark
+		border 1px $stylez $black
 		span //
-			border 1px $stylez $highlight-dark
+			border 1px $stylez $black
+			color $black
 	.block
 		basic-example()
 		margin-bottom ($pad*5)
-		border 1px $stylez $alternate-dark
+		border 1px $stylez $alternate
 		span //
-			border 1px $stylez $alternate-dark
+			border 1px $stylez $alternate
+			color $alternate
+		@media break-point-2
+			split-in(2)
+		@media break-point-3
+			split-in(3)
 	.image-w
 		relative()
 		basic-example()
 		padding 0
 		margin-bottom ($pad*2)
-		border 1px $stylez $color-dark
+		border 1px $stylez $color
 		span //
 			absolute()
 			top 0
 			left ($pad/2)
 			transform translate( $pad, -50% )
-			border 1px $stylez $color-dark
+			border 1px $stylez $color
+			color $color
 	.text-w
 		basic-example()
-		border 1px $stylez $highlight-dark
+		border 1px $stylez $color
 		span //
-			border 1px $stylez $highlight-dark
+			border 1px $stylez $color
+			color $color
 	span //
 		display inline-block
 		transform translate( ($pad/2), -83%)
-		color $highlight-dark
 		background $gray-lighter
 		font-size 12px
-		border $widthz $stylez $borderz
 		padding .5rem
 
 .basic-swatches
