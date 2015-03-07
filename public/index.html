@@ -1,35 +1,132 @@
 <!doctype html>
-<html>
 <head>
-	<meta charset='utf-8' />
+	<meta charset='utf-8'> <!-- should be set in .htaccess -->
 
 	<title>basic-style</title>
 
-	<meta name='description' content='A carefully considered set of styles written with Stylus.' />
+	<meta name='description' content='A carefully considered set of CSS rules written in Stylus.'>
 
-	<meta name='viewport' content='initial-scale=1, maximum-scale=1' />
-	<link rel='stylesheet' href='styles/basic.css' />
+	<meta name='viewport' content='initial-scale=1, maximum-scale=1'>
+
+	<link rel='stylesheet' href='stylesheets/app.css'>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<!-- ▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽ -->
 
 
-	<header class="container masthead">
-	<div class="inner-w">
+
+	<header class='container masthead'>
+	<div class='inner-w'>
 
 		<h1>basic-style</h1>
+
+		<!--
+			this is just for example
+		-->
 
 	</div>
 	</header>
 
 
-	<section class="container welcome">
-	<div class="inner-w">
 
-		<h2>Welcome</h2>
+	<section class='container basic-swatches'>
+		<div class='black'>$black</div>
+		<div class='white'>$white</div>
+		<div class='gray-lighter'>$gray-lighter</div>
+		<div class='gray-light'>$gray-light</div>
+		<div class='gray'>$gray</div>
+		<div class='gray-dark'>$gray-dark</div>
+		<div class='color-light'>$color-light</div>
+		<div class='color'>$color</div>
+		<div class='color-dark'>$color-dark</div>
+		<div class='highlight-light'>$highlight-light</div>
+		<div class='highlight'>$highlight</div>
+		<div class='highlight-dark'>$highlight-dark</div>
+		<div class='alternate-light'>$alternate-light</div>
+		<div class='alternate'>$alternate</div>
+		<div class='alternate-dark'>$alternate-dark</div>
+	</section>
+
+
+
+	<section class='container basic-example'><span>.container</span>
+	<div class='inner-w'><span>.inner-w</span>
+		
+		<div class='block'><span>.block</span>
+			<div class='image-w'><span>.image-w</span>
+				<img src='http://placehold.it/1600x900' alt=''>
+			</div>
+			<div class='text-w'><span>.text-w</span>
+				<h2>example</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel architecto dolorem asperiores, veritatis ab nulla quam similique mollitia. Nihil ducimus, placeat dolores rem consectetur dolorem quia, quo ipsam debitis&nbsp;et.</p>
+			</div>
+		</div>
+
+		<div class='block'><span>.block</span>
+			<div class='image-w'><span>.image-w</span>
+				<img src='http://placehold.it/1600x900' alt=''>
+			</div>
+			<div class='text-w'><span>.text-w</span>
+				<h2>example</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel architecto dolorem asperiores, veritatis ab nulla quam similique mollitia. Nihil ducimus, placeat dolores rem consectetur dolorem quia, quo ipsam debitis&nbsp;et.</p>
+			</div>
+		</div>
+
+		<div class='block'><span>.block</span>
+			<div class='image-w'><span>.image-w</span>
+				<img src='http://placehold.it/1600x900' alt=''>
+			</div>
+			<div class='text-w'><span>.text-w</span>
+				<h2>example</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel architecto dolorem asperiores, veritatis ab nulla quam similique mollitia. Nihil ducimus, placeat dolores rem consectetur dolorem quia, quo ipsam debitis&nbsp;et.</p>
+			</div>
+		</div>
 
 	</div>
 	</section>
 
+
+
+	<div class='container editorial-example'>
+	<div class='inner-w'>
+		
+		<article>
+			
+			<h1>Heading level 1</h1>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, amet libero tenetur fuga quis voluptas ipsam deserunt. Dicta, animi! Minima, eos eius deserunt est ipsum reiciendis laboriosam blanditiis vitae fugiat.</p>
+
+			<h2>Heading level 2</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore delectus veniam voluptas sint quo, magnam impedit. Dicta accusantium, in et ab distinctio. Esse quisquam fugit molestiae atque deleniti vitae animi!</p>
+
+			<h3>Heading level 3</h3>
+
+			<h4>Heading level 4</h4>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dicta, atque. Nostrum voluptatibus, tenetur iste, reiciendis architecto eum distinctio praesentium, saepe numquam natus veritatis officia quo cum magni sunt necessitatibus!</p>
+
+			<h5>Heading level 5</h5>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis pariatur, reprehenderit fuga accusamus quae, molestiae voluptas culpa beatae illo alias. Enim hic quasi perferendis cumque dolorem debitis aliquam eum fugit!</p>
+
+			<h6>Heading level 6</h6>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quaerat similique nihil architecto, accusantium minima temporibus! Aliquam eius, voluptatum earum neque ad, a consectetur excepturi harum consequatur provident libero beatae.</p>
+
+
+
+		</article>
+
+	</div>
+	</div>
+
+
+
+<!-- △△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△ -->
+<div class='media-size-helper'></div>
+<script src='javascripts/vendor.js'></script>
 
 </body>
 </html>

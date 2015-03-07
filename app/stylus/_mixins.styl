@@ -1,5 +1,5 @@
 
-// wireframes
+// set temp wireframes true/false
 wire-frames(wire-frames-on = false)
 	if wire-frames-on
 		border 1px solid rgba(0,0,0,.05)
@@ -8,10 +8,10 @@ wire-frames(wire-frames-on = false)
 			margin-bottom $padding
 			border 1px solid rgba(0,0,0,.1)
 
-* // set wireframes
+* // set temp frames to everything
 	wire-frames()
 
-// simplify position syntax
+// simplified position syntax
 static()
 	position static
 	
@@ -26,12 +26,13 @@ fixed()
 
 // vertically align buddy elements
 balance()
-	float none // to be sure there is no float
+	float none // to be *sure there is no float
 	display inline-block
 	vertical-align middle
 
 // absolutly center
 center-center()
+	float none
 	absolute()
 	margin auto
 	top 50%
@@ -47,4 +48,3 @@ $tap = 44px
 tap-area()
 	min-width $tap
 	min-height $tap
-

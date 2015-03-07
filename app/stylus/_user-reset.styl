@@ -1,12 +1,15 @@
 
-// links
+body //
+	margin 0
+
+// links reset to inherit styles by default
 a
 	text-decoration none
 	color inherit
 	&:hover
-		cursor pointer // just in case ?
+		cursor pointer // just in case
 
-// cursor
+// cursor reset / stops blinking issues
 html,
 body
 	cursor default
@@ -22,7 +25,3 @@ input[type="checkbox"]
 button[disabled],
 input[disabled]
 	cursor default
-
-
-
-

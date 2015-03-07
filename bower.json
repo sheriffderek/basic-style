@@ -1,0 +1,7 @@
+{
+  "name": "basic-brunch",
+  "version": "0.0.1",
+  "main": "public/app.js",
+  "dependencies": {},
+  "overrides": {}
+}

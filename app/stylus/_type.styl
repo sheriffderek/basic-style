@@ -6,93 +6,117 @@ h1, h2, h3, h4, h5, h6, li, p
 	font-weight 400
 
 // font stack
-$heading-font = arial
-$base-font = georgia
+$heading-font-stack	= 'Quicksand', sans-serif
+$base-font-stack 		= 'Georgia', serif
+
+heading()
+	font-family $heading-font-stack
+	color red!important
+	
+copy()
+	font-family $base-font-stack
 
 // text selection reset
 ::-moz-selection {
-    background transparent
-    color $color
+	background transparent
+	color $color-dark
 }
 ::selection {
-    background transparent
-    color $color
+	background transparent
+	color $color-dark
 }
 
-// type patterns
+// simplified font-size syntax
+size($font-size)
+	font-size ($font-size)px
+
+// type size patterns
 extra-small-type()
-	font-size 10px
+	copy()
+	size(10)
 	line-height 1.4
 	color $gray
-	bp(m)
-		font-size 11px
+	@media break-point-2
+		size(11)
 
 small-type()
-	font-size 13px
+	copy()
+	size(13)
 	line-height 1.4
 	color $gray-dark
-	bp(m)
-		font-size 14px
+	@media break-point-2
+		size(14)
 
 standard-type()
-	font-size 16px
+	copy()
+	size(16)
 	line-height 1.4
 	color $black
-	bp(m)
-		font-size 17px
+	@media break-point-2
+		size(17)
 
 medium-type()
-	font-size 19px
+	size(19)
 	line-height 1.4
 	color $color
 	font-weight bold
-	bp(m)
-		font-size 20px
+	@media break-point-2
+		size(20)
 
 large-type()
-	font-size 24px
+	size(24)
 	line-height 1.4
-	color $contrast
-	bp(m)
-		font-size 26px
+	color $alternate
+	@media break-point-2
+		size(26)
 
 extra-large-type()
-	font-size 34px
+	font-family $heading-font
+	size(34)
 	line-height 1.4
 	color $highlight
-	bp(m)
-		font-size 38px
+	@media break-point-2
+		size(38)
 
-
-
+// case
+lowercase()
+	text-transform lowercase
+	
+capitalize()
+	text-transform sentencecase
+	
+uppercase()
+	text-transform uppercase
+	
+// style ALL editorial type here / within some scoped class...
 article
 	//
-	h1
+	h1 //
 		extra-large-type()
 		color $black
 		margin-bottom $padding
 
-	h2
+	h2 //
 		large-type()
 		color $color
 		margin-bottom $padding
 	p + h2
 		margin-top ($padding*3)
 
-	h3
+	h3 //
 		medium-type()
 		color $highlight
 		margin-bottom $padding
 	p + h3
 		margin-top ($padding*3)
 
-	h4
+	h4 //
 		medium-type()
 		margin-bottom $padding
 	p + h4
 		margin-top ($padding*3)
 
-	h5
+	h5 //
 		standard-type()
 		font-weight bold
 		margin-bottom $padding
@@ -101,15 +125,11 @@ article
 	p + h5
 		margin-top ($padding*3)
 
-	p
+	p //
 		standard-type()
 		margin-bottom $padding
 
 	ul, ol
 		padding $padding 0 $padding ($padding*1.7)
-		li
+		li //
 			margin-bottom ($padding/2)
-
-// yo
-
-

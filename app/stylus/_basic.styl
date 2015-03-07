@@ -1,7 +1,10 @@
 
 // box-model reset
+html
+  box-sizing border-box
+
 *, *:before, *:after
-	box-sizing border-box
+  box-sizing inherit
 
 // clear-fix
 clear-fix()
@@ -12,7 +15,6 @@ clear-fix()
 
 // body
 body
-	margin 0
 	clear-fix()
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-webkit-tap-highlight-color: transparent;
@@ -56,10 +58,10 @@ center-block()
 // that invisible column
 .inner-w
 	center-block()
-	max-width 800px // arbitrary
+	max-width 800px // arbitrary: override in _style
 	clear-fix()
 
-full-width() // keep it in the styles
+full-width() // to keep it in the styles when possible
 	max-width 100%
 	padding 0
 

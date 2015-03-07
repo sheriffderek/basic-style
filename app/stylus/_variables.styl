@@ -1,7 +1,11 @@
 
 // colors
-$black = #222222
-$white = #ffffff
+$black 		= #222222
+$white 		= #efefef
+$gray 		= gray
+$color 		= lightgreen
+$highlight 	= lightblue
+$alternate 	= lavender
 
 // shade
 shade($color, $percent)
@@ -11,17 +15,13 @@ shade($color, $percent)
 tint($color, $percent)
 	mix($white, $color, $percent)
 
-$gray 		= gray
-$color 		= #C85B6D
-$highlight 	= #81C1D5
-$alternate 	= #D7A088
+// variations
+$gray-light 		= tint($gray, 50%)
+$gray-dark 			= shade($gray, 50%)
+$gray-lighter 		= tint($gray-light, 80%)
 
-$gray-light 	= tint($gray, 50%)
-$gray-dark 		= shade($gray, 50%)
-$gray-lighter 	= tint($gray-light, 80%)
-
-$color-light 	= tint($color, 50%)
-$color-dark 	= shade($color, 50%)
+$color-light 		= tint($color, 50%)
+$color-dark 		= shade($color, 50%)
 
 $highlight-light 	= tint($highlight, 50%)
 $highlight-dark 	= shade($highlight, 25%)
@@ -29,7 +29,7 @@ $highlight-dark 	= shade($highlight, 25%)
 $alternate-light 	= tint($alternate, 50%)
 $alternate-dark 	= shade($alternate, 25%)
 
-// style
+// layout
 $padding = 0.6rem
+$pad = $padding
 $corner = 5px
-
