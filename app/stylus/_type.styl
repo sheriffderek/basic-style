@@ -5,6 +5,16 @@ h1, h2, h3, h4, h5, h6, li, p
 	padding 0
 	font-weight 400
 
+// text selection reset
+::-moz-selection {
+	background transparent
+	color $color-dark
+}
+::selection {
+	background transparent
+	color $color-dark
+}
+
 // font stack
 $heading-font-stack	= 'Quicksand', sans-serif
 $base-font-stack 		= 'Georgia', serif
@@ -15,16 +25,6 @@ heading()
 	
 copy()
 	font-family $base-font-stack
-
-// text selection reset
-::-moz-selection {
-	background transparent
-	color $color-dark
-}
-::selection {
-	background transparent
-	color $color-dark
-}
 
 // simplified font-size syntax
 size($font-size)
