@@ -40,6 +40,25 @@ a carefully considered set of style rules to make *baby-talking* to computers, n
 </div>
 </section>
 ```
+
+```css
+.inner-w
+	max-width 800px
+	padding $pad
+
+.basic-example
+	background $highlight
+
+	.block
+		background $color
+		color $white
+		padding $pad
+		h2
+			medium-type()
+		@media break-point-3
+			split-in(2)
+```
+		
 <br />
 
 <img src='http://sheriffderek.consulting/resources/social/insignia/512.png' alt='.' width='200px' height='200px' /><br />
