@@ -6,7 +6,7 @@ a carefully considered set of style rules to make *baby-talking* to computers, n
 
 <br />
 
-*basic-style*:
+STATUS: *basic-style...*
 
 1. is usable, although it's family members are not.
 2. currently assumes preprocessing with stylus
@@ -15,7 +15,12 @@ a carefully considered set of style rules to make *baby-talking* to computers, n
 
 <br>
 
-##Example markup
+to see a live implementation, see http://sheriffderek.consulting/basic-style
+
+message me if you would like to know more
+<br>
+
+###markup
 ```html
 <section class='container basic-example'>
 <div class='inner-w'>
@@ -45,7 +50,7 @@ a carefully considered set of style rules to make *baby-talking* to computers, n
 ```
 <br>
 
-##Example stylus
+###stylus
 ```css
 .inner-w
 	max-width 800px
