@@ -13,6 +13,9 @@ a carefully considered set of style rules to make *baby-talking* to computers, n
 3. assumes auto-prefixing will occur sometime before production use
 4. disregards the Microsoft Internet Explorer web browser
 
+<br>
+
+##Example markup
 ```html
 <section class='container basic-example'>
 <div class='inner-w'>
@@ -40,7 +43,9 @@ a carefully considered set of style rules to make *baby-talking* to computers, n
 </div>
 </section>
 ```
+<br>
 
+##Example stylus
 ```css
 .inner-w
 	max-width 800px
@@ -48,7 +53,6 @@ a carefully considered set of style rules to make *baby-talking* to computers, n
 
 .basic-example
 	background $highlight
-
 	.block
 		background $color
 		color $white
@@ -57,9 +61,9 @@ a carefully considered set of style rules to make *baby-talking* to computers, n
 			medium-type()
 		@media break-point-3
 			split-in(2)
-```
-		
-<br />
+```	
+<br>
+
 
 <img src='http://sheriffderek.consulting/resources/social/insignia/512.png' alt='.' width='200px' height='200px' /><br />
 @sheriffderek
