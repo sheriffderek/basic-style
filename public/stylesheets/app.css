@@ -112,17 +112,17 @@ p {
 }
 ::-moz-selection {
   background: transparent;
-  color: #901111;
+  color: #447790;
 }
 ::selection {
   background: transparent;
-  color: #901111;
+  color: #447790;
 }
 article h1 {
   font-family: $heading-font;
   font-size: 34px;
   line-height: 1.4;
-  color: #00f;
+  color: #f66;
   color: #222;
   margin-bottom: 0.6rem;
 }
@@ -134,8 +134,8 @@ article h1 {
 article h2 {
   font-size: 24px;
   line-height: 1.4;
-  color: #ff0;
-  color: #f00;
+  color: #ff6;
+  color: #6cf;
   margin-bottom: 0.6rem;
 }
 @media screen and (min-width: 700px) {
@@ -149,9 +149,9 @@ article p + h2 {
 article h3 {
   font-size: 19px;
   line-height: 1.4;
-  color: #f00;
+  color: #6cf;
   font-weight: bold;
-  color: #00f;
+  color: #f66;
   margin-bottom: 0.6rem;
 }
 @media screen and (min-width: 700px) {
@@ -165,7 +165,7 @@ article p + h3 {
 article h4 {
   font-size: 19px;
   line-height: 1.4;
-  color: #f00;
+  color: #6cf;
   font-weight: bold;
   margin-bottom: 0.6rem;
 }
@@ -227,7 +227,7 @@ article ol li {
 /* components */
 .button {
   display: inline-block;
-  background: #00f;
+  background: #f66;
   color: #efefef;
   border-radius: 5px;
   padding: 0 1.2rem;
@@ -238,10 +238,10 @@ article ol li {
   text-align: center;
 }
 .button.light {
-  background: #f00;
+  background: #6cf;
 }
 .button.dark {
-  background: #00f;
+  background: #f66;
 }
 /* development helpers */
 h1:after,
@@ -341,21 +341,21 @@ p:after {
 .container.basic-example {
   padding: 0.6rem;
   background: rgba(0,0,0,0.04);
-  border: 1px dotted #f00;
+  border: 1px dotted #6cf;
 }
 .container.basic-example span {
-  border: 1px dotted #f00;
-  color: #f00;
+  border: 1px dotted #6cf;
+  color: #6cf;
 }
 .container.basic-example .inner-w {
   padding: 0.6rem;
   background: rgba(0,0,0,0.04);
   margin-bottom: 1.2rem;
-  border: 1px dotted #00f;
+  border: 1px dotted #f66;
 }
 .container.basic-example .inner-w span {
-  border: 1px dotted #00f;
-  color: #00f;
+  border: 1px dotted #f66;
+  color: #f66;
 }
 .container.basic-example .block-list {
   padding: 0.6rem;
@@ -370,11 +370,11 @@ p:after {
   padding: 0.6rem;
   background: rgba(0,0,0,0.04);
   margin-bottom: 3rem;
-  border: 1px dotted #ff0;
+  border: 1px dotted #ff6;
 }
 .container.basic-example .block span {
-  border: 1px dotted #ff0;
-  color: #ff0;
+  border: 1px dotted #ff6;
+  color: #ff6;
 }
 .container.basic-example .image-w {
   position: relative;
@@ -382,7 +382,7 @@ p:after {
   background: rgba(0,0,0,0.04);
   padding: 0;
   margin-bottom: 1.2rem;
-  border: 1px dotted #f00;
+  border: 1px dotted #6cf;
 }
 .container.basic-example .image-w span {
   position: absolute;
@@ -391,17 +391,17 @@ p:after {
   -webkit-transform: translate(0.6rem, -50%);
       -ms-transform: translate(0.6rem, -50%);
           transform: translate(0.6rem, -50%);
-  border: 1px dotted #f00;
-  color: #f00;
+  border: 1px dotted #6cf;
+  color: #6cf;
 }
 .container.basic-example .text-w {
   padding: 0.6rem;
   background: rgba(0,0,0,0.04);
-  border: 1px dotted #f00;
+  border: 1px dotted #6cf;
 }
 .container.basic-example .text-w span {
-  border: 1px dotted #f00;
-  color: #f00;
+  border: 1px dotted #6cf;
+  color: #6cf;
 }
 .container.basic-example span {
   display: inline-block;
@@ -458,31 +458,31 @@ p:after {
   background: #e3e3e3;
 }
 .basic-swatches div.color-light {
-  background: #f77777;
+  background: #aaddf7;
 }
 .basic-swatches div.color {
-  background: #f00;
+  background: #6cf;
 }
 .basic-swatches div.color-dark {
-  background: #901111;
+  background: #447790;
 }
 .basic-swatches div.highlight-light {
-  background: #7777f7;
+  background: #f7aaaa;
 }
 .basic-swatches div.highlight {
-  background: #00f;
+  background: #f66;
 }
 .basic-swatches div.highlight-dark {
-  background: #0808c7;
+  background: #c75555;
 }
 .basic-swatches div.alternate-light {
-  background: #f7f777;
+  background: #f7f7aa;
 }
 .basic-swatches div.alternate {
-  background: #ff0;
+  background: #ff6;
 }
 .basic-swatches div.alternate-dark {
-  background: #c7c708;
+  background: #c7c755;
 }
 /* this is just an example
 	i would just delete it. */
