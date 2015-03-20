@@ -4,36 +4,43 @@
 	display inline-block
 	fill currentColor
 
-// icon patterns
-$extra-small-icon-size = 12px
-extra-small-icon()
-	width $extra-small-icon-size
-	height $extra-small-icon-size
-
-$small-icon-size = 18px
-small-icon()
-	width $small-icon-size
-	height $small-icon-size
-
 $standard-icon-size = 25px
 .icon-x
 	width $standard-icon-size
 	height $standard-icon-size
-standard-icon()
-	width $standard-icon-size
-	height $standard-icon-size
+
+// icon patterns
+$extra-small-icon-size = 12px
+extra-small-icons()
+	.icon-x
+		width $extra-small-icon-size
+		height $extra-small-icon-size
+
+$small-icon-size = 18px
+small-icons()
+	.icon-x
+		width $small-icon-size
+		height $small-icon-size
+
+standard-icons()
+	.icon-x
+		width $standard-icon-size
+		height $standard-icon-size
 
 $medium-icon-size = 35px
-medium-icon()
-	width $medium-icon-size
-	height $medium-icon-size
+medium-icons()
+	.icon-x
+		width $medium-icon-size
+		height $medium-icon-size
 
 $large-icon-size = 60px
-large-icon()
-	width $large-icon-size
-	height $large-icon-size
+large-icons()
+	.icon-x
+		width $large-icon-size
+		height $large-icon-size
 
 $extra-large-icon-size = 90px
-extra-large-icon()
-	width $extra-large-icon-size
-	height $extra-large-icon-size
+extra-large-icons()
+	.icon-x
+		width $extra-large-icon-size
+		height $extra-large-icon-size
