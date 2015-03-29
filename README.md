@@ -4,18 +4,16 @@ basic | style
 
 a carefully considered set of CSS rules to make *baby-talking* to computers, notably more enjoyable
 
+more of a philosophy than a 'framework'
+
 <br>
 
 STATUS: *basic-style...*
 
-1. is usable, although it's family members are not, yet
-2. currently assumes preprocessing with stylus
+1. is usable  - although it's family members are not, yet
+2. assumes preprocessing with stylus
 3. assumes auto-prefixing will occur sometime before production use
 4. disregards the Microsoft Internet Explorer web browser
-
-<br>
-
-
 
 <br>
 
