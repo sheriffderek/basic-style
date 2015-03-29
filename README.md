@@ -61,7 +61,7 @@ STATUS: *basic-style...*
 		background $color
 		color $white
 		padding $pad
-		h2
+		h2 //
 			medium-type()
 		@media break-point-3
 			split-in(2)
