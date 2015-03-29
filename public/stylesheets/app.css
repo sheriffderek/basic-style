@@ -1,4 +1,8 @@
-/* this style-sheet is generated with stylus */
+/* this style-sheet is generated with stylus
+
+	sheriffderek.consulting/basic
+
+*/
 /* set charicter set */
 @charset 'UTF-8';
 /* user reset */
@@ -33,7 +37,7 @@ button[disabled],
 input[disabled] {
   cursor: default;
 }
-/* basic */
+/* basic philosophy */
 html {
   box-sizing: border-box;
 }
@@ -282,7 +286,9 @@ h5:after,
 h6:after,
 p:after {
   color: inherit;
-  opacity: 0.1;
+  opacity: 0.2;
+  font-size: 0.6em;
+  vertical-align: 20%;
 }
 h1:after {
   content: '-h1';
