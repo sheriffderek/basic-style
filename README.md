@@ -8,16 +8,15 @@ a carefully considered set of CSS rules to make *baby-talking* to computers, not
 
 STATUS: *basic-style...*
 
-1. is usable, although it's family members are not.
+1. is usable, although it's family members are not, yet
 2. currently assumes preprocessing with stylus
 3. assumes auto-prefixing will occur sometime before production use
 4. disregards the Microsoft Internet Explorer web browser
 
 <br>
 
-to see a live implementation, see http://sheriffderek.consulting/basic-style
 
-message me if you would like to know more
+
 <br>
 
 ###markup
