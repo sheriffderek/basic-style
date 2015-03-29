@@ -1,18 +1,21 @@
 
 // standard button
 .button
-	display inline-block
-	background $highlight
-	color $white
-	border-radius $corner
-	padding 0 ($padding*2)
-	line-height $tap
+	display: inline-block
+	background: $highlight
+	color: $white
+	border-radius: $corner
+	padding: 0 ($padding*2)
+	line-height: $tap
 	tap-area()
-	min-width 160px
-	text-align center
+	min-width: 160px
+	text-align: center
 	&.light
-		background $color
+		background: $color
 	&.dark
-		background $highlight
+		background: $highlight
+	@media break-point-2
+		max-width: auto
+		max-height: auto
 
 // reusable components can live here...
