@@ -5,18 +5,34 @@ h1, h2, h3, h4, h5, h6, li, p
 	padding: 0
 	font-weight: 400
 
-// text selection reset
-::-moz-selection, ::selection
-	background: transparent
+selectable($type)
+	-webkit-user-select: $type
+	-khtml-user-select: $type
+	-moz-user-select: -moz- + ($type)
+	-o-user-select: $type
+	user-select: $type
 
-text-selection($color)
-	::-moz-selection
-		color: $color
-	::selection
-		color: $color
+* //
+	selectable(none)
+
+h1, h2, h3, h4, h5, h6, li, p
+	selectable(text)
+
+// text selection reset
+* //
+	&::-moz-selection,
+	&::selection
+		background: rgba(255,255,255,0) // nessesary ?
+		background: transparent
+
+selection-color($selection-color)
+	&::-moz-selection
+		color: $selection-color
+	&::selection
+		color: $selection-color
 
 // scope specific text selection highlights
-text-selection($highlight)
+selection-color($highlight)
 
 // font stack
 $heading-font-stack	= 'Quicksand', sans-serif
