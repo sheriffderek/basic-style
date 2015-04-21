@@ -1,7 +1,7 @@
 # Dependencies #
 ################
 bower_components
-node_packages
+node_modules
 
 
 # Packages #

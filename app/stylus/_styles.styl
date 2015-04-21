@@ -5,16 +5,236 @@
 //////////////////////////////////////////
 
 
+
+html //
+	background: $alternate
+
+/*
+linear-gradient(to bottom, $alternate 0%, $alternate 50%, $highlight 50%, $highlight 100%)
+*/
+
+// for weighted footer
+html, body, body > div // #ember281
+	// height: 100%
+
+absolute-cover()
+	absolute()
+	width: 100%
+	height: 100%
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background: black
+
+fixed-cover()
+	fixed()
+	width: 100%
+	height: 100%
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background: black
+
+// big picture
 body //
-	background: white
+	theme(alternate)
 	font-family: $base-font-stack
+	background: $highlight
 
 .inner-w
 	max-width: 1000px
 	padding: $pad
 	@media break-point-2
-		padding: $pad*2
-		
+		padding: $pad $pad*2
+
+.master
+	min-height: 100%
+	background: $alternate
+
+.loading
+	center-center()
+
+
+// sections
+// =====================================
+
+.header
+	theme(color)
+	.inner-w
+		padding-top: $pad*3
+	.site-title
+		large-icons()
+		* //
+			balance()
+	nav //
+		.inner-w
+			padding: 0
+		menu
+			block-list()
+			
+
+.page-header
+	//
+	.inner-w
+		padding: 0
+	theme(highlight)
+	h2 //
+		width: auto
+		min-width: 100px
+		float: left
+	nav //
+		float: right
+		.menu
+			block-list()
+			li //
+				float: left
+				border-left: 1px solid $highlight-dark
+				&:first-of-type
+					border: 0
+			a //
+				display: block
+				padding: $pad $pad*2
+				&:active
+					background: $highlight-dark
+					color: $highlight
+				&.active
+					background: $highlight-light
+					color: $highlight-dark
+					&:active
+						background: $highlight-light
+						color: $highlight-dark
+
+.stage
+	padding-bottom: $pad*8
+
+.stage.posts
+	li //
+		max-width: 600px
+	.column
+		&:nth-of-type(2)
+			li //
+				background: $alternate-light
+				color: $alternate-dark
+	@media break-point-3
+		.column
+			&:nth-of-type(1)
+				width: 65%
+			&:nth-of-type(2)
+				width: 32%
+				float: right
+
+.stage.books
+	//
+
+.page-title
+	padding: $pad 0
+	margin-bottom: $pad
+
+.post-list
+	//
+	li //
+		margin-bottom: $pad*2
+		background: $alternate-dark
+		color: $alternate
+		padding: $pad
+
+.grid-examples
+	min-height: 200px
+	.block
+		margin-bottom: $pad*5
+		@media break-point-2-4		
+			&:nth-of-type(1)
+				width: 60%
+			&:nth-of-type(2)
+				float: right
+				width: 30%
+				padding: $pad
+				padding-bottom: 0
+				background: $alternate-dark
+				margin-bottom: 0
+				li //
+					background: $alternate
+			&:nth-of-type(3)
+				float: right
+				width: 30%
+				clear: right
+				padding: $pad
+				padding-bottom: 0
+				background: $alternate-dark
+				li //
+					background: $alternate
+		@media break-point-4		
+			&:nth-of-type(1)
+				width: 32%
+				margin-right: 2%
+				background: $alternate-dark
+				padding: $pad*2
+				padding-bottom: $pad
+				div //
+					background: $alternate
+			&:nth-of-type(2)
+				float: left
+				width: 32%
+				margin-right: 2%
+			&:nth-of-type(3)
+				float: left
+				width: 32%
+				clear: none
+	.grid-1
+		//
+		@media break-point-1-3
+			grid-in(2)
+		@media break-point-3-8
+			grid-in(6)
+		@media break-point-8
+			grid-in(3)
+		> * //
+			background: $alternate-dark
+			margin-bottom: $pad
+			min-height: 40px
+			
+	.grid-2
+		//
+		@media break-point-1-4
+			grid-in(7)
+		@media break-point-4-7
+			grid-in(5)
+		@media break-point-7
+			grid-in(2)
+		> * //
+			background: $alternate-dark
+			margin-bottom: $pad
+			min-height: 30px
+			
+	.grid-3
+		//
+		@media break-point-1-3
+			grid-in(20)
+		@media break-point-3
+			grid-in(11)
+		> * //
+			background: $alternate-dark
+			margin-bottom: $pad
+			min-height: 30px
+
+.footer
+	theme(highlight)
+	.inner-w
+		padding-bottom: $pad*12
+
+.phone-home
+	display: block
+	
+.book-list
+	> li //
+		background: $alternate-light
+		margin-bottom: $pad*3
+		padding: $pad
+.book-cover
+	max-width: 150px
+
 
 
 // sections

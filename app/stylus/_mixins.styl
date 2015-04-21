@@ -30,6 +30,31 @@ balance()
 	display: inline-block
 	vertical-align: middle
 
+balance-buddy($position, $height = 0)
+  //
+	if $position == before
+		&:before
+			balance()
+			content: ''
+			width: 0
+			height: $height
+			overflow: hidden
+	else if $position == after
+		&:after
+			balance()
+			content: ''
+			width: 0
+			height: $height
+			overflow: hidden
+	else //
+		//
+
+hide()
+  	display: none
+
+show()
+	display: block
+
 // absolutly center
 center-center()
 	float: none
@@ -44,7 +69,10 @@ split-in($number-of-parts)
 	width: (1 / $number-of-parts * 100%)
 
 // minimum area for "tap" interaction
-$tap = 44px
+$tap-size = 44px
 tap-area()
-	min-width: $tap
-	min-height: $tap
+	min-width: $tap-size
+	min-height: $tap-size
+	@media break-point-2
+		min-width: auto
+		min-height: auto
