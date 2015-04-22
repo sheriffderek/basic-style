@@ -3,9 +3,13 @@
 $black 		= #222222
 $white 		= #efefef
 $gray 		= gray
+
 $color 		= #66ccff
 $highlight 	= #ff6666 
 $alternate 	= #ffff66
+
+$light 		= $gray-lighter
+$dark 		= $gray-dark
 
 // shade
 shade($color, $percent)
@@ -28,6 +32,14 @@ $highlight-dark 	= shade($highlight, 25%)
 
 $alternate-light 	= tint($alternate, 50%)
 $alternate-dark 	= shade($alternate, 25%)
+
+// for mini theme stuffs
+$light-light 		= $white
+$light-dark			= $gray
+
+$dark-light 		= $gray-light
+$dark-dark 			= $black
+
 
 // layout
 $padding = 0.6rem
