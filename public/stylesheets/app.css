@@ -6,6 +6,12 @@
 /* set charicter set */
 @charset 'UTF-8';
 /* user reset */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 body {
   margin: 0;
 }
@@ -36,6 +42,32 @@ input[type="checkbox"] {
 button[disabled],
 input[disabled] {
   cursor: default;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+display: none,
+show() {
+  display: block;
+}
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }
 /* basic philosophy */
 html {
@@ -284,11 +316,17 @@ p {
   color: #efefef;
   border-radius: 5px;
   padding: 0 1.2rem;
-  line-height: 44px;
+  line-height: $tap;
   min-width: 44px;
   min-height: 44px;
   min-width: 160px;
   text-align: center;
+}
+@media screen and (min-width: 700px) {
+  .button {
+    min-width: auto;
+    min-height: auto;
+  }
 }
 .button.light {
   background: #6cf;
@@ -316,25 +354,25 @@ p:after {
   vertical-align: 20%;
 }
 h1:after {
-  content: '-h1';
+  content: '~h1';
 }
 h2:after {
-  content: '-h2';
+  content: '~h2';
 }
 h3:after {
-  content: '-h3';
+  content: '~h3';
 }
 h4:after {
-  content: '-h4';
+  content: '~h4';
 }
 h5:after {
-  content: '-h5';
+  content: '~h5';
 }
 h6:after {
-  content: '-h6';
+  content: '~h6';
 }
 p:after {
-  content: '-p';
+  content: '~p';
 }
 .media-size-helper {
   position: fixed;
@@ -353,7 +391,7 @@ p:after {
   content: '0';
   color: #222;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 400px) {
   .media-size-helper:after {
     content: '1';
   }
@@ -503,7 +541,7 @@ p:after {
   -webkit-transition: 0.3s padding ease-in;
           transition: 0.3s padding ease-in;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 400px) {
   .basic-swatches div {
     padding: 0.6rem;
     width: 33.3333333333333%;
@@ -566,10 +604,29 @@ p:after {
 }
 /* this is just an example
 	i would just delete it. */
+/* print styles */
+@media print {
+  img {
+    max-width: 100% !important;
+  }
+}
+@media print {
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+}
 /* styles */
+html {
+  background: #efefef;
+}
 body {
-  background: #fff;
+  background: #ff6;
+  color: #c7c755;
   font-family: 'Georgia', serif;
+  background: #efefef;
 }
 .inner-w {
   max-width: 1000px;
@@ -577,7 +634,285 @@ body {
 }
 @media screen and (min-width: 700px) {
   .inner-w {
-    padding: 1.2rem;
+    padding: 0.6rem 1.2rem;
   }
+}
+.master {
+  min-height: 100%;
+  background: #ff6;
+}
+.loading {
+  float: none;
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.header {
+  background: #6cf;
+  color: #447790;
+}
+.header .inner-w {
+  padding-top: 1.8rem;
+}
+.header .site-title .icon-x {
+  width: 60px;
+  height: 60px;
+}
+.header .site-title * {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.header nav .inner-w {
+  padding: 0;
+}
+.header nav menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.page-header {
+  background: #f66;
+  color: #c75555;
+}
+.page-header .inner-w {
+  padding: 0;
+}
+.page-header h2 {
+  width: auto;
+  min-width: 100px;
+  float: left;
+}
+.page-header nav {
+  float: right;
+}
+.page-header nav .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.page-header nav .menu li {
+  float: left;
+  border-left: 1px solid #c75555;
+}
+.page-header nav .menu li:first-of-type {
+  border: 0;
+}
+.page-header nav .menu a {
+  display: block;
+  padding: 0.6rem 1.2rem;
+}
+.page-header nav .menu a:active {
+  background: #c75555;
+  color: #f66;
+}
+.page-header nav .menu a.active {
+  background: #f7aaaa;
+  color: #c75555;
+}
+.page-header nav .menu a.active:active {
+  background: #f7aaaa;
+  color: #c75555;
+}
+.stage {
+  padding-bottom: 4.8rem;
+}
+.stage.posts li {
+  max-width: 600px;
+}
+.stage.posts .column:nth-of-type(2) li {
+  background: #f7f7aa;
+  color: #c7c755;
+}
+@media screen and (min-width: 1000px) {
+  .stage.posts .column:nth-of-type(1) {
+    width: 65%;
+  }
+  .stage.posts .column:nth-of-type(2) {
+    width: 32%;
+    float: right;
+  }
+}
+.page-title {
+  padding: 0.6rem 0;
+  margin-bottom: 0.6rem;
+}
+.post-list li {
+  margin-bottom: 1.2rem;
+  background: #c7c755;
+  color: #ff6;
+  padding: 0.6rem;
+}
+.grid-examples {
+  min-height: 200px;
+}
+.grid-examples .block {
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 700px) and (max-width: 1299px) {
+  .grid-examples .block:nth-of-type(1) {
+    width: 60%;
+  }
+  .grid-examples .block:nth-of-type(2) {
+    float: right;
+    width: 30%;
+    padding: 0.6rem;
+    padding-bottom: 0;
+    background: #c7c755;
+    margin-bottom: 0;
+  }
+  .grid-examples .block:nth-of-type(2) li {
+    background: #ff6;
+  }
+  .grid-examples .block:nth-of-type(3) {
+    float: right;
+    width: 30%;
+    clear: right;
+    padding: 0.6rem;
+    padding-bottom: 0;
+    background: #c7c755;
+  }
+  .grid-examples .block:nth-of-type(3) li {
+    background: #ff6;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .grid-examples .block:nth-of-type(1) {
+    width: 32%;
+    margin-right: 2%;
+    background: #c7c755;
+    padding: 1.2rem;
+    padding-bottom: 0.6rem;
+  }
+  .grid-examples .block:nth-of-type(1) div {
+    background: #ff6;
+  }
+  .grid-examples .block:nth-of-type(2) {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+  }
+  .grid-examples .block:nth-of-type(3) {
+    float: left;
+    width: 32%;
+    clear: none;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 999px) {
+  .grid-examples .grid-1 > * {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+  }
+  .grid-examples .grid-1 > *:nth-of-type(2n + 2 ) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 2699px) {
+  .grid-examples .grid-1 > * {
+    float: left;
+    width: 15%;
+    margin-right: 2%;
+  }
+  .grid-examples .grid-1 > *:nth-of-type(6n + 6 ) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 2700px) {
+  .grid-examples .grid-1 > * {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+  }
+  .grid-examples .grid-1 > *:nth-of-type(3n + 3 ) {
+    margin-right: 0;
+  }
+}
+.grid-examples .grid-1 > * {
+  background: #c7c755;
+  margin-bottom: 0.6rem;
+  min-height: 40px;
+}
+@media screen and (min-width: 400px) and (max-width: 1299px) {
+  .grid-examples .grid-2 > * {
+    float: left;
+    width: 12.571428571428573%;
+    margin-right: 2%;
+  }
+  .grid-examples .grid-2 > *:nth-of-type(7n + 7 ) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 2399px) {
+  .grid-examples .grid-2 > * {
+    float: left;
+    width: 18.4%;
+    margin-right: 2%;
+  }
+  .grid-examples .grid-2 > *:nth-of-type(5n + 5 ) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 2400px) {
+  .grid-examples .grid-2 > * {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+  }
+  .grid-examples .grid-2 > *:nth-of-type(2n + 2 ) {
+    margin-right: 0;
+  }
+}
+.grid-examples .grid-2 > * {
+  background: #c7c755;
+  margin-bottom: 0.6rem;
+  min-height: 30px;
+}
+@media screen and (min-width: 400px) and (max-width: 999px) {
+  .grid-examples .grid-3 > * {
+    float: left;
+    width: 3.1%;
+    margin-right: 2%;
+  }
+  .grid-examples .grid-3 > *:nth-of-type(20n + 20 ) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .grid-examples .grid-3 > * {
+    float: left;
+    width: 7.272727272727273%;
+    margin-right: 2%;
+  }
+  .grid-examples .grid-3 > *:nth-of-type(11n + 11 ) {
+    margin-right: 0;
+  }
+}
+.grid-examples .grid-3 > * {
+  background: #c7c755;
+  margin-bottom: 0.6rem;
+  min-height: 30px;
+}
+.footer {
+  background: #f66;
+  color: #c75555;
+}
+.footer .inner-w {
+  padding-bottom: 7.199999999999999rem;
+}
+.phone-home {
+  display: block;
+}
+.book-list > li {
+  background: #f7f7aa;
+  margin-bottom: 1.8rem;
+  padding: 0.6rem;
+}
+.book-cover {
+  max-width: 150px;
 }
 

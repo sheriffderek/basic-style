@@ -1,4 +1,12 @@
 
+// ensure font size isn't adjusted in mobile browsers
+html 
+	font-size: 100% 
+	overflow-y: scroll 
+	-webkit-text-size-adjust: 100% 
+	-ms-text-size-adjust: 100%
+
+// remove default margin
 body //
 	margin 0
 
@@ -25,3 +33,7 @@ input[type="checkbox"]
 button[disabled],
 input[disabled]
 	cursor: default
+	
+// resolves an IE 9 SVG bug
+svg:not(:root)
+	overflow: hidden
