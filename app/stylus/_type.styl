@@ -5,12 +5,12 @@ h1, h2, h3, h4, h5, h6, li, p
 	padding: 0
 	font-weight: 400
 
-selectable($type)
-	-webkit-user-select: $type
-	-khtml-user-select: $type
-	-moz-user-select: -moz- + ($type)
-	-o-user-select: $type
-	user-select: $type
+selectable($target)
+	-webkit-user-select: $target
+	-khtml-user-select: $target
+	-moz-user-select: -moz- + ($target)
+	-o-user-select: $target
+	user-select: $target
 
 * //
 	selectable(none)
@@ -106,41 +106,41 @@ uppercase()
 	h1 //
 		extra-large-type()
 		color: $black
-		margin-bottom: $padding
+		margin-bottom: $pad
 
 	h2 //
 		large-type()
 		color $color
-		margin-bottom: $padding
+		margin-bottom: $pad
 	p + h2
-		margin-top: $padding*3
+		margin-top: $pad*3
 
 	h3 //
 		medium-type()
 		color: $highlight
-		margin-bottom: $padding
+		margin-bottom: $pad
 	p + h3
-		margin-top: $padding*3
+		margin-top: $pad*3
 
 	h4 //
 		medium-type()
-		margin-bottom: $padding
+		margin-bottom: $pad
 	p + h4
-		margin-top: $padding*3
+		margin-top: $pad*3
 
 	h5 //
 		standard-type()
 		font-weight: bold
-		margin-bottom: $padding
+		margin-bottom: $pad
 
 	p + h5
-		margin-top: $padding*3
+		margin-top: $pad*3
 
 	p //
 		standard-type()
-		margin-bottom: $padding
+		margin-bottom: $pad
 
 	ul, ol
-		padding: $padding 0 $padding $padding*1.7
+		padding: $pad 0 $pad $pad*1.7
 		li //
-			margin-bottom $padding*.5
+			margin-bottom $pad*.5
