@@ -2,18 +2,30 @@
 // standard button
 .button
 	display: inline-block
-	background: $highlight
-	color: $white
+	background: $gray
+	color: $gray-dark
 	border-radius: $corner
-	padding: 0 ($pad*2)
+	padding: $pad $pad*2
 	line-height: $tap
-	tap-area()
 	min-width: 160px
 	text-align: center
-	&.light
+	cursor: pointer
+	transition: .5s
+	&:hover
+		background: $gray-dark
+		color: $white
+		transition: .1s
+	&.color
 		background: $color
-	&.dark
+		color: $color-dark
+	&.highlight
 		background: $highlight
+		color: $highlight-dark
+	&.alternate
+		background: $alternate
+		color: $alternate-dark
+	> * //
+		balance()
 	@media break-point-2
 		max-width: auto
 		max-height: auto

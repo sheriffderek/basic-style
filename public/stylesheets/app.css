@@ -69,6 +69,20 @@ show() {
   position: static;
   width: auto;
 }
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+body:hover .visually-hidden a,
+body:hover .visually-hidden input,
+body:hover .visually-hidden button {
+  display: none !important;
+}
 /* basic philosophy */
 html {
   box-sizing: border-box;
@@ -312,27 +326,39 @@ p {
 /* components */
 .button {
   display: inline-block;
-  background: #f66;
-  color: #efefef;
-  border-radius: 5px;
-  padding: 0 1.2rem;
+  background: #808080;
+  color: #515151;
+  border-radius: 0.24rem;
+  padding: 0.6rem 1.2rem;
   line-height: $tap;
-  min-width: 44px;
-  min-height: 44px;
   min-width: 160px;
   text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+          transition: 0.5s;
 }
-@media screen and (min-width: 700px) {
-  .button {
-    min-width: auto;
-    min-height: auto;
-  }
+.button:hover {
+  background: #515151;
+  color: #efefef;
+  -webkit-transition: 0.1s;
+          transition: 0.1s;
 }
-.button.light {
+.button.color {
   background: #6cf;
+  color: #447790;
 }
-.button.dark {
+.button.highlight {
   background: #f66;
+  color: #c75555;
+}
+.button.alternate {
+  background: #ff6;
+  color: #c7c755;
+}
+.button > * {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
 }
 @media screen and (min-width: 700px) {
   .button {
@@ -350,7 +376,7 @@ h6:after,
 p:after {
   color: inherit;
   opacity: 0.2;
-  font-size: 0.6em;
+  font-size: 0.6px;
   vertical-align: 20%;
 }
 h1:after {
@@ -602,6 +628,9 @@ p:after {
 .basic-swatches div.alternate-dark {
   background: #c7c755;
 }
+.buttons {
+  padding-bottom: 2.4rem;
+}
 /* this is just an example
 	i would just delete it. */
 /* print styles */
@@ -623,8 +652,6 @@ html {
   background: #efefef;
 }
 body {
-  background: #ff6;
-  color: #c7c755;
   font-family: 'Georgia', serif;
   background: #efefef;
 }
@@ -654,6 +681,10 @@ body {
 .header {
   background: #6cf;
   color: #447790;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4543/noise.png");
+  background-size: 100px;
+  background-color: #6cf;
+  border-color: #447790;
 }
 .header .inner-w {
   padding-top: 1.8rem;
@@ -678,6 +709,10 @@ body {
 .page-header {
   background: #f66;
   color: #c75555;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4543/noise.png");
+  background-size: 100px;
+  background-color: #f66;
+  border-color: #c75555;
 }
 .page-header .inner-w {
   padding: 0;
@@ -900,6 +935,10 @@ body {
 .footer {
   background: #f66;
   color: #c75555;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4543/noise.png");
+  background-size: 100px;
+  background-color: #f66;
+  border-color: #c75555;
 }
 .footer .inner-w {
   padding-bottom: 7.199999999999999rem;
