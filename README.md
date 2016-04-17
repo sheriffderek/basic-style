@@ -2,20 +2,11 @@
 basic | style
 =============
 
-a carefully considered set of CSS rules to make *baby-talking* to computers, notably more enjoyable
+a carefully considered set of rules and mixins for people who like stylus and style-guide driven visual design
 
-more of a philosophy than a 'framework'
-
-<br>
-
-STATUS: *basic-style...*
-
-1. is usable  - although it's family members are not, yet
-2. assumes preprocessing with stylus
-3. assumes auto-prefixing will occur sometime before production use
-4. disregards the Microsoft Internet Explorer web browser
-
-<br>
+1. written with stylus
+2. assumes auto-prefixing will occur
+3. disregards the Microsoft's _Internet Explorer_ web browser
 
 ###markup
 ```html
@@ -61,9 +52,9 @@ STATUS: *basic-style...*
 		padding $pad
 		h2 //
 			medium-type()
-		@media break-point-3
+		@media $break-point-3
 			split-in(2)
-```	
+```
 <br>
 
 
