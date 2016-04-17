@@ -58,5 +58,5 @@ a carefully considered set of rules and mixins for people who like stylus and st
 <br>
 
 
-<img src='http://sheriffderek.consulting/resources/social/insignia/512.png' alt='.' width='200px' height='200px' /><br />
+<img src='http://sheriffderek.consulting/resources/social/insignia/512.png' alt='.' width='100px' height='100px' /><br />
 @sheriffderek
