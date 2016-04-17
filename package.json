@@ -12,9 +12,9 @@
     "test": "brunch test"
   },
   "devDependencies": {
-    "auto-reload-brunch": "^1.7.6",
-    "autoprefixer-brunch": "^1.8.3",
+    "auto-reload-brunch": "^1.8.0",
     "css-brunch": "^1.7.0",
+    "postcss-brunch": "^0.4.2",
     "stylus-brunch": "^1.8.1"
   }
 }
