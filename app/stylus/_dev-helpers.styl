@@ -2,3 +2,14 @@
 /*! development helpers */
 @import 'helpers/_type-hierarchy-helper'
 @import 'helpers/_break-point-helper'
+
+wire-frames(wire-frames-on = false)
+	if wire-frames-on
+		border: 1px solid rgba(0,0,0,.05)
+		padding: ($padding/2)
+		.container
+			margin-bottom: $padding
+			border: 1px solid rgba(0,0,0,.1)
+
+* //
+	wire-frames()

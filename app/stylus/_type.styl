@@ -12,7 +12,7 @@ selectable($target)
 	-o-user-select: $target
 	user-select: $target
 
-* //
+*:not(input) //
 	selectable(none)
 
 h1, h2, h3, h4, h5, h6, li, p
@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6, li, p
 * //
 	&::-moz-selection,
 	&::selection
-		background: rgba(255,255,255,0) // nessesary ?
+		background: rgba(255,255,255,0) // nessesary ? $check
 		background: transparent
 
 selection-color($selection-color)
@@ -36,9 +36,9 @@ selection-color($highlight)
 
 // font stack
 $heading-font-stack	= 'Quicksand', sans-serif
-$base-font-stack 		= 'Georgia', serif
+$base-font-stack 	= 'Georgia', serif
 
-// simplified font-size syntax
+// simplified font-size syntax ??? 
 size($font-size)
 	font-size: ($font-size)px
 	
@@ -48,50 +48,50 @@ font-size($font-size)
 // type size patterns
 extra-small-type()
 	copy()
-	size(10)
+	font-size(10)
 	line-height: 1.4
 	color: $gray
 	@media break-point-2
-		size(11)
+		font-size(11)
 
 small-type()
 	copy()
-	size(13)
+	font-size(13)
 	line-height: 1.4
 	color: $gray-dark
 	@media break-point-2
-		size(14)
+		font-size(14)
 
 standard-type()
 	copy()
-	size(16)
+	font-size(16)
 	line-height: 1.4
 	color $black
 	@media break-point-2
-		size(17)
+		font-size(17)
 
 medium-type()
-	size(19)
+	font-size(19)
 	line-height: 1.4
 	color: $color
 	font-weight: bold
 	@media break-point-2
-		size(20)
+		font-size(20)
 
 large-type()
-	size(24)
+	font-size(24)
 	line-height: 1.4
 	color: $alternate
 	@media break-point-2
-		size(26)
+		font-size(26)
 
 extra-large-type()
 	font-family: $heading-font
-	size(34)
+	font-size(34)
 	line-height: 1.4
 	color: $highlight
 	@media break-point-2
-		size(38)
+		font-size(38)
 
 // case
 lowercase()

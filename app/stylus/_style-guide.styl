@@ -70,7 +70,7 @@ basic-example()
 		padding: .5rem
 	.column
 		//
-		@media break-point-2
+		@media $break-point-2
 			&:nth-of-type(1)
 				width: 64%
 				float: left
@@ -79,7 +79,7 @@ basic-example()
 				float: right
 
 // swatches
-.basic-swatches
+.swatches
 	padding-bottom: 30px
 	div //
 		width: 100%
@@ -88,14 +88,14 @@ basic-example()
 		text-shadow: 0 0 2px alpha(white, .5)
 		transition: .3s padding ease-in
 
-		@media break-point-1
+		@media $break-point-1
 			padding: .6rem
 			split-in(3)
 			
-		@media break-point-2
+		@media $break-point-2
 			padding: .9rem
 
-		@media break-point-3
+		@media $break-point-3
 			split-in(6)
 
 		&.black
@@ -131,3 +131,8 @@ basic-example()
 			
 .buttons
 	padding-bottom: $pad*4
+	.inner-w
+		display: flex
+		flex-direction: row
+		.button:not(:last-of-type)
+			margin-right: $pad

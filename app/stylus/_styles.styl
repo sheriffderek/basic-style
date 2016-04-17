@@ -20,18 +20,23 @@ body //
 	background: $white
 
 .inner-w
+	center-block()
 	max-width: 1000px
 	padding: $pad
-	@media break-point-2
+	clear-fix()
+	@media $break-point-2
 		padding: $pad $pad*2
 
 .master
 	min-height: 100%
 	background: $alternate
+	flex-balance()
 
 .loading
-	center-center()
+	fixed-translate-center()
 
+.image-w
+	image-w()
 
 // sections
 // =====================================
@@ -42,34 +47,39 @@ body //
 		padding-top: $pad*3
 	.site-title
 		large-icons()
-		* //
-			balance()
+		display: flex
+		flex-direction: row
+		align-items: center
 	nav //
 		.inner-w
 			padding: 0
 		menu
-			block-list()
+			//
 
+.masthead
+	.site-title
+		display: flex
+		flex-direction: row
+		align-items: center
 
 
 .page-header
-	//
+	theme(highlight)
 	.inner-w
 		padding: 0
-	theme(highlight)
 	h2 //
 		width: auto
 		min-width: 100px
 		float: left
+		large-type()
 	nav //
 		float: right
 		.menu
-			block-list()
+			//
 			li //
 				float: left
-				border-left: 1px solid $highlight-dark
-				&:first-of-type
-					border: 0
+				&:not(:first-of-type)
+					border-left: 1px solid $highlight-dark
 			a //
 				display: block
 				padding: $pad $pad*2
@@ -94,7 +104,7 @@ body //
 			li //
 				background: $alternate-light
 				color: $alternate-dark
-	@media break-point-3
+	@media $break-point-3
 		.column
 			&:nth-of-type(1)
 				width: 65%
@@ -121,7 +131,7 @@ body //
 	min-height: 200px
 	.block
 		margin-bottom: $pad*5
-		@media break-point-2-4		
+		@media $break-point-2-4
 			&:nth-of-type(1)
 				width: 60%
 			&:nth-of-type(2)
@@ -142,7 +152,7 @@ body //
 				background: $alternate-dark
 				li //
 					background: $alternate
-		@media break-point-4		
+		@media $break-point-4		
 			&:nth-of-type(1)
 				width: 32%
 				margin-right: 2%
@@ -161,11 +171,11 @@ body //
 				clear: none
 	.grid-1
 		//
-		@media break-point-1-3
+		@media $break-point-1-3
 			grid-in(2)
-		@media break-point-3-8
+		@media $break-point-3-8
 			grid-in(6)
-		@media break-point-8
+		@media $break-point-8
 			grid-in(3)
 		> * //
 			background: $alternate-dark
@@ -174,11 +184,11 @@ body //
 			
 	.grid-2
 		//
-		@media break-point-1-4
+		@media $break-point-1-4
 			grid-in(7)
-		@media break-point-4-7
+		@media $break-point-4-7
 			grid-in(5)
-		@media break-point-7
+		@media $break-point-7
 			grid-in(2)
 		> * //
 			background: $alternate-dark
@@ -187,9 +197,9 @@ body //
 			
 	.grid-3
 		//
-		@media break-point-1-3
+		@media $break-point-1-3
 			grid-in(20)
-		@media break-point-3
+		@media $break-point-3
 			grid-in(11)
 		> * //
 			background: $alternate-dark
@@ -209,6 +219,7 @@ body //
 		background: $alternate-light
 		margin-bottom: $pad*3
 		padding: $pad
+
 .book-cover
 	max-width: 150px
 
