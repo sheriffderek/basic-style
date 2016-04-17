@@ -96,43 +96,6 @@ tap-area()
 		min-width: auto
 		min-height: auto
 		
-// visually hide things
-visually-hidden()
-	border 0
-	clip rect(0 0 0 0)
-	height 1px
-	margin -1px
-	overflow hidden
-	padding 0
-	position absolute
-	width 1px
-	&.focusable
-		&:active, &:focus
-			clip auto
-			height auto
-			margin 0
-			overflow visible
-			position static
-			width auto
-
-.visually-hidden
-	visually-hidden()
-
-// accesibly hidden
-// http://developer.yahoo.com/blogs/ydn/posts/2012/10/clip-your-hidden-content-for-better-accessibility
-.visually-hidden 
-	position: absolute !important
-	clip: rect(1px, 1px, 1px, 1px)
-	padding: 0 !important
-	border: 0 !important
-	height: 1px !important
-	width: 1px !important
-	overflow: hidden
-    
-body:hover 
-	.visually-hidden 
-		a, input, button
-			display: none !important
 
 block-size($width, $height = $width)
 	display: block
