@@ -4,7 +4,7 @@
 
 // standard button
 button()
-	// display: inline-block
+	display: inline-block
 	background: $gray
 	color: $gray-dark
 	border-radius: $corner
@@ -14,7 +14,9 @@ button()
 	text-align: center
 	cursor: pointer
 	transition: .5s
-	flex-balance()
+	> *
+		balance()
+	// flex-balance()
 	// width: 0
 	white-space: nowrap
 	&:hover
