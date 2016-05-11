@@ -9,15 +9,12 @@ button()
 	color: $gray-dark
 	border-radius: $corner
 	padding: $pad $pad*2
-	// line-height: $tap
 	min-width: 160px
 	text-align: center
 	cursor: pointer
 	transition: .5s
 	> *
 		balance()
-	// flex-balance()
-	// width: 0
 	white-space: nowrap
 	&:hover
 		background: $gray-dark
@@ -38,5 +35,5 @@ button()
 		max-width: auto
 		max-height: auto
 
-.button
+.button, [role='button']
 	button()
