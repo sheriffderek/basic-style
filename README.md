@@ -4,11 +4,13 @@ basic | style
 
 a carefully considered set of rules and mixins for people who like stylus and style-guide driven visual design
 
+## EDIT: This was pre-flex box... so - it's just for the memories now. ; )
+
 1. written with stylus
 2. assumes auto-prefixing will occur
 3. disregards the Microsoft's _Internet Explorer_ web browser
 
-###markup
+### markup
 ```html
 <section class='container basic-example'>
 <div class='inner-w'>
@@ -38,7 +40,7 @@ a carefully considered set of rules and mixins for people who like stylus and st
 ```
 <br>
 
-###stylus
+### stylus
 ```css
 .inner-w
 	max-width 800px
